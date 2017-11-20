@@ -1,9 +1,44 @@
 /* http://www.colourlovers.com/palette/4265687/Ace_Pride */
 
 body {
-    font-family: "Noto Sans", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
     background: #EDE9EF;
+    font-size: 16pt;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+date {
+    color: #A79CAE;
+    margin: .5rem 0;
+    display: block;
+}
+
+#resume article {
+    margin: 3rem 0;
+}
+#resume article header h3 {
+    font-weight: 100;
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+}
+#resume article h5 {
+    font-size: 1em;
+}
+#tech li.list-group-item {
+    background: transparent;
+}
+ul.pagination.horiz-list-group .page-link {
+    color: inherit;
+}
+ul.pagination.horiz-list-group .page-link:hover {
+    background: inherit;
+    color: inherit;
+}
+ul.pagination.horiz-list-group .page-item {
+    font-size: .9em;
+}
+
 #contact svg {
     height: 40px;
 }
