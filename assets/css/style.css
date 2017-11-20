@@ -61,3 +61,8 @@ ul.pagination.horiz-list-group .page-item {
 .page-link:hover svg path {
     fill: #70549A;
 }
+
+footer {
+    font-size: .8em;
+    color: #A79CAE;
+}
