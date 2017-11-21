@@ -26,6 +26,10 @@ a:active {
     padding-left: 5px;
 }
 
+#blog .card {
+    margin-bottom: 2rem;
+}
+
 #resume article {
     margin: 3rem 0;
 }
