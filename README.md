@@ -6,6 +6,9 @@
 1. [Step 4](#step-4)
 1. [Step 5](#step-5)
 1. [Step 6](#step-6)
+1. [Step 7](#step-7)
+1. [Step 8](#step-8)
+1. [Step 9](#step-9)
 
 ---
 
@@ -138,3 +141,55 @@ Update your navigation bar with the following interactivity:
 
 ### Final Result
 ![Blog Jumbo](https://github.com/nss-day-cohort-23/personal-site-instructions/raw/master/images/Blog_Jumbo.gif)
+
+---
+
+<a href="step-7"></a>
+
+## Step 7 Requirements
+
+1. ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. Sting template literals (`${}`).
+
+---
+
+<a href="step-8"></a>
+
+## Step 8 Requirements
+
+1.  Add jQuery to your project for any DOM manipulation.  
+
+2.  None of the following should no longer exist in your project:
+    * `document.getElementById`
+    * `XHRHttpRequest`
+    * `addEventListener`
+    * `parentNode`
+    * `childNode`
+    * `siblingNode`
+    * any other DOM traversal with the word node
+
+
+3. You should make use of jquery things like:
+    * `$.get`
+    * `.click`
+    * `.children`
+    * `.parent`
+    * `.sibling`
+    * any other methods that strike your fancy
+
+---
+
+<a href="step-9"></a>
+
+## Step 9 Requirements
+
+1.  Add SASS to your project for all styling.  You will need to change your Gruntfile and add an NPM package.
+
+2.  None of the following should exist in your project:
+    * Hex colors (except in variable definitions)
+    * Lots of repetitive CSS &mdash; if classes share the same properties, you should define that in one place and extend where needed
+    * defining the class each time for different pseudoclasses; ex. having a `.card` and a `.card:hover` - use SASS nesting
+
+3. You should make use of SASS things like:
+    * Variables for colors
+    * Extend common style 
+    * Nest your classes 
