@@ -36,6 +36,9 @@ a:active {
     text-overflow: ellipsis;
     display: block;
 }
+#blog-holder .card.failed-search {
+    opacity: .25;
+}
 
 #resume article {
     margin: 3rem 0;
