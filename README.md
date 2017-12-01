@@ -144,7 +144,7 @@ Update your navigation bar with the following interactivity:
 
 ---
 
-<a href="step-7"></a>
+<a id="step-7"></a>
 
 ## Step 7 Requirements
 
@@ -152,7 +152,7 @@ Update your navigation bar with the following interactivity:
 
 ---
 
-<a href="step-8"></a>
+<a id="step-8"></a>
 
 ## Step 8 Requirements
 
@@ -178,7 +178,7 @@ Update your navigation bar with the following interactivity:
 
 ---
 
-<a href="step-9"></a>
+<a id="step-9"></a>
 
 ## Step 9 Requirements
 
