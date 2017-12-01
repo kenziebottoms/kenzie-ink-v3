@@ -29,6 +29,13 @@ a:active {
 #blog .card {
     margin-bottom: 2rem;
 }
+#blog-holder .card {
+    /* TODO delete */
+    overflow: hidden;
+    height: 225px;
+    text-overflow: ellipsis;
+    display: block;
+}
 
 #resume article {
     margin: 3rem 0;

@@ -1,29 +1,42 @@
-$(document).ready(function() {
-    let blogs = [];
+let blogs = [];
 
-    let blogRequest = new XMLHttpRequest();
-    blogRequest.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            let response = JSON.parse(this.responseText);
-            blogs = response["blogs"];
-            console.log(blogs);
-            blogs.forEach(function(element, index) {
-                if (index%3 == 0) {
-                    $('#blog-holder').append($('<div>',{class:'row'}));
-                }
-                addBlog(blogs[index]);
-            });
-        }
-    };
-    blogRequest.open("GET", "assets/js/blogs.json", true);
-    blogRequest.send();
-});
+// fetch blogs from blogs.json
+let blogRequest = new XMLHttpRequest();
+blogRequest.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        let response = JSON.parse(this.responseText);
+        blogs = response["blogs"];
+        console.log(blogs);
+        // add each blog to #blog-holder
+        blogs.forEach(function(element, index) {
+            if (index%3 == 0) {
+                // add a new row for every third element
+                $('#blog-holder').append($('<div>',{class:'row'}));
+            }
+            // add each blog
+            addBlog(blogs[index], $('#blog-holder .row:last-child'));
+        });
+        // populate #blog-highlight
+        addBlog(blogs[0], $('#blog-highlight .row'));
 
-function addBlog(blog) {
+        // add click listeners to each blog
+        $('#blog-holder .card').click(function() {
+            let targetPostId = parseInt($(this).attr('id').substr(5));
+            let newBlog = blogs.filter(blog=>blog.id == targetPostId)[0];
+            $('#blog-highlight .row').empty();
+            addBlog(newBlog, $('#blog-highlight .row'));
+        });
+    }
+};
+blogRequest.open("GET", "assets/js/blogs.json", true);
+blogRequest.send();
+
+function addBlog(blog, loc) {
     $('<div>',{class:'col'})
         .append(
             $('<article>',{
-                class: 'card'
+                class: 'card',
+                id: `post-${blog.id}`
             }).append(
                 $('<div>',{
                     class: 'card-body'
@@ -42,5 +55,5 @@ function addBlog(blog) {
                 )
             )
         )
-    .appendTo($('#blog-holder .row:last-child'));
+    .appendTo(loc);
 }
