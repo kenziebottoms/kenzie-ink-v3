@@ -18,23 +18,12 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #95538C;
-    background: #fff;
-}
-a:active {
-    padding-right: 5px;
-    padding-left: 5px;
+    color: #70549A;
 }
 
 #blog .card {
     margin-bottom: 2rem;
-}
-#blog-holder .card {
-    /* TODO delete */
-    overflow: hidden;
-    height: 225px;
-    text-overflow: ellipsis;
-    display: block;
+    cursor: pointer;
 }
 #blog-holder .card.failed-search {
     opacity: .25;

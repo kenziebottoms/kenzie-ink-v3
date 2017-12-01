@@ -158,7 +158,7 @@ Update your navigation bar with the following interactivity:
 
 1.  Add jQuery to your project for any DOM manipulation.  
 
-2.  None of the following should no longer exist in your project:
+2.  None of the following should exist any longer in your project:
     * `document.getElementById`
     * `XHRHttpRequest`
     * `addEventListener`
@@ -168,7 +168,7 @@ Update your navigation bar with the following interactivity:
     * any other DOM traversal with the word node
 
 
-3. You should make use of jquery things like:
+3. You should make use of jQuery things like:
     * `$.get`
     * `.click`
     * `.children`
