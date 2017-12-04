@@ -1,14 +1,14 @@
 /* http://www.colourlovers.com/palette/4265687/Ace_Pride */
 
-@import "colors";
+@import "variables";
 
 body {
-    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+    font-family: $sans-stack;
     background: $white;
     font-size: 14pt;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
+    font-family: $serif-stack;
 }
 date {
     color: $gray;
@@ -50,18 +50,26 @@ a {
     }
 }
 
-#tech li.list-group-item {
-    background: transparent;
+#tech {
+    li.list-group-item {
+        background: transparent;
+    }
 }
 
 ul.pagination.horiz-list-group {
     .page-link {
         color: inherit;
+        &:hover {
+            background: inherit;
+            color: inherit;
+        }
     }
-    &:hover {
-        background: inherit;
-        color: inherit;
+    .insta, .twitter {
+        .page-link {
+            padding: 3px;
+        }
     }
+    
     .page-item {
         font-size: .9em;
     }
@@ -73,11 +81,6 @@ ul.pagination.horiz-list-group {
     }
     svg {
         height: 40px;
-    }
-}
-.insta, .twitter {
-    .page-link {
-        padding: 3px;
     }
 }
 
