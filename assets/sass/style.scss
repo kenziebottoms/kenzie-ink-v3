@@ -1,0 +1,100 @@
+/* http://www.colourlovers.com/palette/4265687/Ace_Pride */
+
+@import "colors";
+
+body {
+    font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", "Helvetica", Arial, Verdana, sans-serif;
+    background: $white;
+    font-size: 14pt;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+date {
+    color: $gray;
+    margin: .5rem 0;
+    display: block;
+}
+a {
+    color: $purple;
+    text-decoration: none;
+    &:hover {
+        color: $purple;
+    }
+}
+
+#blog {
+    .card {
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+}
+
+#blog-holder .card.failed-search {
+    opacity: .25;
+}
+
+#resume {
+    article {
+        margin: 3rem 0;
+        h5 {
+            font-size: 1em;
+        }
+    }
+    header {
+        h3 {
+            font-weight: 100;
+            margin-bottom: 1rem;
+            font-size: 1.4em;
+        }
+    }
+}
+
+#tech li.list-group-item {
+    background: transparent;
+}
+
+ul.pagination.horiz-list-group {
+    .page-link {
+        color: inherit;
+    }
+    &:hover {
+        background: inherit;
+        color: inherit;
+    }
+    .page-item {
+        font-size: .9em;
+    }
+}
+
+#contact {
+    #insta, #twitter {
+        height: 50px;
+    }
+    svg {
+        height: 40px;
+    }
+}
+.insta, .twitter {
+    .page-link {
+        padding: 3px;
+    }
+}
+
+.page-link {
+    background: transparent;
+    border-color: rgba($gray,.7);
+    &:hover {
+        background: rgba(#fff,.3);
+        border-color: rgba($gray,.7);
+        
+        svg path {
+            fill: $purple;
+        }
+    }
+}
+
+footer {
+    font-size: .8em;
+    color: $gray;
+}
