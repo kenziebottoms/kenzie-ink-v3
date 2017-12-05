@@ -1,5 +1,12 @@
 "use strict";
 
+require("./blogFactory.js");
+require("./events.js");
+
+console.log("activating blogFactory() from main.js");
+let blogs = blogFactory();
+activateEvents(blogs);
+
 const addBlog = (blog, loc) => {
     $('<div>',{class:'col'})
         .append(

@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+        browserify: {
+            "dist/bundle.js" : ["assets/js/main.js"],
+        },
         jshint: {
             files: ["assets/js/**/*.js"],
             options: {
@@ -13,14 +16,14 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    "assets/css/style.css" : "assets/sass/style.scss"
+                    "assets/css/style.css" : "assets/sass/style.scss",
                 },
             },
         },
         watch: {
             javascripts: {
                 files: ["assets/js/**/*.js"],
-                tasks: ["jshint"],
+                tasks: ["jshint", "browserify"],
             },
             sass: {
                 files: ["assets/sass/**/*.scss"],
@@ -33,5 +36,5 @@ module.exports = function(grunt) {
         .filter("grunt-*")
         .forEach(grunt.loadNpmTasks);
     
-    grunt.registerTask("default", ["jshint", "sass", "watch"]);
+    grunt.registerTask("default", ["jshint", "sass", "browserify", "watch"]);
 };
