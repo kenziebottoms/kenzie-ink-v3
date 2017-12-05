@@ -1,7 +1,8 @@
 "use strict";
 
-let blogFactory = () => {
-    console.log("Running blogFactory()");
+function blogFactory() {
+    const domController = require("./dom");
+
     let blogs = [];
     
     // fetch blogs from blogs.json
@@ -17,14 +18,14 @@ let blogFactory = () => {
                     $('#blog-holder').append($('<div>',{class:'row'}));
                 }
                 // add each blog
-                addBlog(blogs[index], $('#blog-holder .row:last-child'));
+                domController.addBlog(blogs[index], $('#blog-holder .row:last-child'));
             });
             // populate #blog-highlight
-            addBlog(blogs[0], $('#blog-highlight .row'));
+            domController.addBlog(blogs[0], $('#blog-highlight .row'));
             console.log("returning blogs from blogFactory()");
             return blogs;
         }
     };
     blogRequest.open("GET", "assets/js/blogs.json", true);
     blogRequest.send();
-};
+}
