@@ -25,13 +25,37 @@ a {
 
 #blog {
     .card {
-        margin-bottom: 2rem;
         cursor: pointer;
     }
-}
-
-#blog-holder .card.failed-search {
-    opacity: .25;
+    #blog-holder {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        .card {
+            &.failed-search {
+                opacity: .25;
+            }
+        }
+    }
+    #search {
+        width: 60%;
+        margin: 2rem auto 1rem auto;
+        display: flex;
+        flex-wrap: nowrap;
+        i {
+            flex-grow: 0;
+            padding: .25rem;
+            color: $gray;
+        }
+        input {
+            flex-basis: 100%;
+            padding-left: .25rem;
+            &::placeholder {
+                color: $gray;
+            }
+        }
+    }
 }
 
 #resume {

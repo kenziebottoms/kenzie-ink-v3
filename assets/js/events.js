@@ -10,9 +10,10 @@ function activateSearch(blogs) {
     $('#search-blogs').keyup(function() {
         $('#blog-holder .card').removeClass("failed-search");
         let term = $(this).val();
+        let re = new RegExp(term, "i");
         $.each(blogs, function(index) {
             let blog = blogs[index];
-            if (blog.title.search(term) == -1 && blog.content.search(term) == -1) {
+            if (blog.title.search(re) == -1 && blog.content.search(term) == -1) {
                 $(".card#post-"+blog.id).addClass("failed-search");
             }
         });
@@ -25,8 +26,8 @@ function activateBlogCards(blogs) {
     $('#blog-holder .card').click(function() {
         let targetPostId = parseInt($(this).attr('id').substr(5));
         let newBlog = blogs.filter(blog => blog.id == targetPostId)[0];
-        $('#blog-highlight .row').empty();
-        $('#blog-highlight .row').append(domController.getCard(newBlog));
+        $('#blog-highlight').empty();
+        $('#blog-highlight').append(domController.getCard(newBlog));
     });
 }
 

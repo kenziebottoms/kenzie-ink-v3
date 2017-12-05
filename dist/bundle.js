@@ -25,36 +25,30 @@ module.exports = {fetchBlogs};
 "use strict";
 
 function getCard(blog) {
-    let card = `<div class="col">
-        <article class="card" id="post-${blog.id}">
-            <div class="card-body">
-                <h4 class="card-title">
-                    ${blog.title}
-                </h4>
-                <h6 class="card-subtitle mb-2 text-muted">
-                    ${blog.date}
-                </h6>
-                <p class="card-text">
-                    ${blog.content}
-                </p>
-            </div>
-        </article>
-    </div>`;
+    let card = `<article class="card" id="post-${blog.id}">
+        <div class="card-body">
+            <h4 class="card-title">
+                ${blog.title}
+            </h4>
+            <h6 class="card-subtitle mb-2 text-muted">
+                ${blog.date}
+            </h6>
+            <p class="card-text">
+                ${blog.content}
+            </p>
+        </div>
+    </article>`;
     return card;
 }
 
 function populatePage(blogs) {
     // populate small blog posts
     blogs.forEach(function(element, index) {
-        // add a new row for every third element
-        if (index%3 == 0) {
-            $('#blog-holder').append($('<div>',{class:'row'}));
-        }
         // add each blog
-        $('#blog-holder .row:last-child').append(getCard(blogs[index]));
+        $('#blog-holder').append(getCard(blogs[index]));
     });
     // populate #blog-highlight
-    $('#blog-highlight .row').append(getCard(blogs[0]));
+    $('#blog-highlight').append(getCard(blogs[0]));
 }
 
 module.exports = {populatePage, getCard};
@@ -71,9 +65,10 @@ function activateSearch(blogs) {
     $('#search-blogs').keyup(function() {
         $('#blog-holder .card').removeClass("failed-search");
         let term = $(this).val();
+        let re = new RegExp(term, "i");
         $.each(blogs, function(index) {
             let blog = blogs[index];
-            if (blog.title.search(term) == -1 && blog.content.search(term) == -1) {
+            if (blog.title.search(re) == -1 && blog.content.search(term) == -1) {
                 $(".card#post-"+blog.id).addClass("failed-search");
             }
         });
@@ -86,8 +81,8 @@ function activateBlogCards(blogs) {
     $('#blog-holder .card').click(function() {
         let targetPostId = parseInt($(this).attr('id').substr(5));
         let newBlog = blogs.filter(blog => blog.id == targetPostId)[0];
-        $('#blog-highlight .row').empty();
-        $('#blog-highlight .row').append(domController.getCard(newBlog));
+        $('#blog-highlight').empty();
+        $('#blog-highlight').append(domController.getCard(newBlog));
     });
 }
 

@@ -148,7 +148,7 @@ Update your navigation bar with the following interactivity:
 
 ## Step 7 Requirements
 
-1. ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. Sting template literals (`${}`).
+1. ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. String template literals (`${}`).
 
 ---
 
