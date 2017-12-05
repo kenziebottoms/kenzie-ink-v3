@@ -1,8 +1,8 @@
 "use strict";
 
-const blogFactory = require("./blogFactory");
+const factory = require("./blogFactory");
 const events = require("./events");
 const domController = require("./dom");
 
-let blogs = blogFactory.blogFactory();
+let blogs = factory.blogFactory("assets/js/blogs.json");
 events.activateEvents(blogs);

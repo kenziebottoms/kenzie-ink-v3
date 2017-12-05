@@ -23,3 +23,5 @@ function activateEvents(blogs) {
         });
     });
 }
+
+module.exports = {activateEvents};

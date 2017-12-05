@@ -1,6 +1,6 @@
 "use strict";
 
-function blogFactory() {
+function blogFactory(filePath) {
     const domController = require("./dom");
 
     let blogs = [];
@@ -26,6 +26,8 @@ function blogFactory() {
             return blogs;
         }
     };
-    blogRequest.open("GET", "assets/js/blogs.json", true);
+    blogRequest.open("GET", filePath, true);
     blogRequest.send();
 }
+
+module.exports = {blogFactory};

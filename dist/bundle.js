@@ -1,7 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 "use strict";
 
-function blogFactory() {
+function blogFactory(filePath) {
     const domController = require("./dom");
 
     let blogs = [];
@@ -27,9 +27,11 @@ function blogFactory() {
             return blogs;
         }
     };
-    blogRequest.open("GET", "assets/js/blogs.json", true);
+    blogRequest.open("GET", filePath, true);
     blogRequest.send();
 }
+
+module.exports = {blogFactory};
 },{"./dom":2}],2:[function(require,module,exports){
 "use strict";
 
@@ -59,6 +61,8 @@ function addBlog(blog, loc) {
         )
     .appendTo(loc);
 }
+
+module.exports = {addBlog};
 },{}],3:[function(require,module,exports){
 "use strict";
 
@@ -85,13 +89,15 @@ function activateEvents(blogs) {
         });
     });
 }
+
+module.exports = {activateEvents};
 },{"./dom":2}],4:[function(require,module,exports){
 "use strict";
 
-const blogFactory = require("./blogFactory");
+const factory = require("./blogFactory");
 const events = require("./events");
 const domController = require("./dom");
 
-let blogs = blogFactory.blogFactory();
+let blogs = factory.blogFactory("assets/js/blogs.json");
 events.activateEvents(blogs);
 },{"./blogFactory":1,"./dom":2,"./events":3}]},{},[4]);

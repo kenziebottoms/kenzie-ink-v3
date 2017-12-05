@@ -26,3 +26,5 @@ function addBlog(blog, loc) {
         )
     .appendTo(loc);
 }
+
+module.exports = {addBlog};
