@@ -1,30 +1,36 @@
 "use strict";
 
-function addBlog(blog, loc) {
-    $('<div>',{class:'col'})
-        .append(
-            $('<article>',{
-                class: 'card',
-                id: `post-${blog.id}`
-            }).append(
-                $('<div>',{
-                    class: 'card-body'
-                }).append(
-                    $('<h4>',{
-                        class: 'card-title'
-                    }).html(blog.title)
-                ).append(
-                    $('<h6>', {
-                        class: 'card-subtitle mb-2 text-muted'
-                    }).html(blog.date)
-                ).append(
-                    $('<p>',{
-                        class: 'card-text'
-                    }).html(blog.content)
-                )
-            )
-        )
-    .appendTo(loc);
+function getCard(blog) {
+    let card = `<div class="col">
+        <article class="card" id="post-${blog.id}">
+            <div class="card-body">
+                <h4 class="card-title">
+                    ${blog.title}
+                </h4>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    ${blog.date}
+                </h6>
+                <p class="card-text">
+                    ${blog.content}
+                </p>
+            </div>
+        </article>
+    </div>`;
+    return card;
 }
 
-module.exports = {addBlog};
+function populatePage(blogs) {
+    // populate small blog posts
+    blogs.forEach(function(element, index) {
+        // add a new row for every third element
+        if (index%3 == 0) {
+            $('#blog-holder').append($('<div>',{class:'row'}));
+        }
+        // add each blog
+        $('#blog-holder .row:last-child').append(getCard(blogs[index]));
+    });
+    // populate #blog-highlight
+    $('#blog-highlight .row').append(getCard(blogs[0]));
+}
+
+module.exports = {populatePage, getCard};
