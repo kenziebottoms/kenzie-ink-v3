@@ -1,3 +1,5 @@
+"use strict";
+
 let blogs = [];
 
 // fetch blogs from blogs.json
@@ -5,7 +7,7 @@ let blogRequest = new XMLHttpRequest();
 blogRequest.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let response = JSON.parse(this.responseText);
-        blogs = response["blogs"];
+        blogs = response.blogs;
         console.log(blogs);
         // add each blog to #blog-holder
         blogs.forEach(function(element, index) {
@@ -36,7 +38,7 @@ blogRequest.onreadystatechange = function() {
                 if (blog.title.search(term) == -1 && blog.content.search(term) == -1) {
                     $(".card#post-"+blog.id).addClass("failed-search");
                 }
-            })
+            });
         });
     }
 };

@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         jshint: {
-            files: ['assets/js/**/*.js'],
+            files: ["assets/js/**/*.js"],
             options: {
                 predef: ["document", "console", "$"],
                 esnext: true,
@@ -13,25 +13,25 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 files: {
-                    'assets/css/style.css' : 'assets/sass/style.scss'
+                    "assets/css/style.css" : "assets/sass/style.scss"
                 },
             },
         },
         watch: {
             javascripts: {
-                files: ['assets/js/**/*.js'],
-                tasks: ['jshint'],
+                files: ["assets/js/**/*.js"],
+                tasks: ["jshint"],
             },
             sass: {
-                files: ['assets/sass/**/*.scss'],
-                tasks: ['sass'],
+                files: ["assets/sass/**/*.scss"],
+                tasks: ["sass"],
             },
         },
     });
 
     require("matchdep")
-        .filterDev("grunt-*")
+        .filter("grunt-*")
         .forEach(grunt.loadNpmTasks);
     
-    grunt.registerTask("default", ['jshint', 'sass', 'watch']);
+    grunt.registerTask("default", ["jshint", "sass", "watch"]);
 };
