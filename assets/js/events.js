@@ -27,7 +27,7 @@ function activateBlogCards(blogs) {
         let targetPostId = parseInt($(this).attr('id').substr(5));
         let newBlog = blogs.filter(blog => blog.id == targetPostId)[0];
         $('#blog-highlight').empty();
-        $('#blog-highlight').append(domController.getCard(newBlog));
+        $('#blog-highlight').append(domController.getCard(newBlog, false));
     });
 }
 
