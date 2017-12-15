@@ -148,7 +148,7 @@ Update your navigation bar with the following interactivity:
 
 ## Step 7 Requirements
 
-1. ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. String template literals (`${}`).
+1. [ ] ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. String template literals (`${}`).
 
 ---
 
@@ -156,25 +156,22 @@ Update your navigation bar with the following interactivity:
 
 ## Step 8 Requirements
 
-1.  Add jQuery to your project for any DOM manipulation.  
-
-2.  None of the following should exist any longer in your project:
-    * `document.getElementById`
-    * `XHRHttpRequest`
-    * `addEventListener`
-    * `parentNode`
-    * `childNode`
-    * `siblingNode`
-    * any other DOM traversal with the word node
-
-
-3. You should make use of jQuery things like:
-    * `$.get`
-    * `.click`
-    * `.children`
-    * `.parent`
-    * `.sibling`
-    * any other methods that strike your fancy
+- [ ] Add jQuery to your project for any DOM manipulation.  
+- [ ] None of the following should exist any longer in your project:
+    * [ ] `document.getElementById`
+    * [ ] `XHRHttpRequest`
+    * [ ] `addEventListener`
+    * [ ] `parentNode`
+    * [ ] `childNode`
+    * [ ] `siblingNode`
+    * [ ] any other DOM traversal with the word node
+- [ ] You should make use of jQuery things like:
+    * [ ] `$.get`
+    * [ ] `.click`
+    * [ ] `.children`
+    * [ ] `.parent`
+    * [ ] `.sibling`
+    * [ ] any other methods that strike your fancy
 
 ---
 
@@ -182,14 +179,13 @@ Update your navigation bar with the following interactivity:
 
 ## Step 9 Requirements
 
-1.  Add SASS to your project for all styling.  You will need to change your Gruntfile and add an NPM package.
-
-2.  None of the following should exist in your project:
-    * Hex colors (except in variable definitions)
-    * Lots of repetitive CSS &mdash; if classes share the same properties, you should define that in one place and extend where needed
-    * defining the class each time for different pseudoclasses; ex. having a `.card` and a `.card:hover` - use SASS nesting
-
-3. You should make use of SASS things like:
-    * Variables for colors
-    * Extend common style 
-    * Nest your classes 
+1. [x] Add SASS to your project for all styling.  You will need to change your Gruntfile and add an NPM package.
+2. [x] None of the following should exist in your project:
+  - [x] Hex colors (except in variable definitions)
+  - [x] Lots of repetitive CSS &mdash; if classes share the same properties, you should define that in one place and extend where needed
+  - [x] defining the class each time for different pseudoclasses
+    - Ex. having a `.card` and a `.card:hover` - use SASS nesting
+1. [x] You should make use of SASS things like:
+    [x] Variables for colors
+    [ ] Extend common style 
+    [x] Nest your classes 
