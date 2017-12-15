@@ -179,12 +179,12 @@ Update your navigation bar with the following interactivity:
 
 ## Step 9 Requirements
 
-1. [x] Add SASS to your project for all styling.  You will need to change your Gruntfile and add an NPM package.
+1. [x] Add SASS to your project for all styling. You will need to change your Gruntfile and add an NPM package.
 2. [x] None of the following should exist in your project:
-  - [x] Hex colors (except in variable definitions)
-  - [x] Lots of repetitive CSS &mdash; if classes share the same properties, you should define that in one place and extend where needed
-  - [x] defining the class each time for different pseudoclasses
-    - Ex. having a `.card` and a `.card:hover` - use SASS nesting
+    - [x] Hex colors (except in variable definitions)
+    - [x] Lots of repetitive CSS &mdash; if classes share the same properties, you should define that in one place and extend where needed
+    - [x] defining the class each time for different pseudoclasses
+      - Ex. having a `.card` and a `.card:hover` - use SASS nesting
 1. [x] You should make use of SASS things like:
     - [x] Variables for colors
     - [ ] Extend common style 
