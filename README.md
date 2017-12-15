@@ -186,6 +186,6 @@ Update your navigation bar with the following interactivity:
   - [x] defining the class each time for different pseudoclasses
     - Ex. having a `.card` and a `.card:hover` - use SASS nesting
 1. [x] You should make use of SASS things like:
-    [x] Variables for colors
-    [ ] Extend common style 
-    [x] Nest your classes 
+  - [x] Variables for colors
+  - [ ] Extend common style 
+  - [x] Nest your classes 
