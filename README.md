@@ -1,10 +1,10 @@
 # Personal Bio Site
 
-1. [Step 1](#step-1)
-1. [Step 2](#step-2)
-1. [Step 3](#step-3)
-1. [Step 4](#step-4)
-1. [Step 5](#step-5)
+1. :white_check_mark: [Step 1](#step-1)
+1. :white_check_mark: [Step 2](#step-2)
+1. :white_check_mark: [Step 3](#step-3)
+1. :white_check_mark: [Step 4](#step-4)
+1. :white_check_mark: [Step 5](#step-5)
 1. [Step 6](#step-6)
 1. [Step 7](#step-7)
 1. [Step 8](#step-8)
@@ -117,7 +117,7 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-6"></a>
 
-## :white_check_mark: Step 6 Requirements
+## Step 6 Requirements
 
 - [x] Grid System: Use the grid system to display your blog entries. You should have 3 blog articles per row.
 - [x] Bootstrap Nav Bar: Should contain 3 elements: 
