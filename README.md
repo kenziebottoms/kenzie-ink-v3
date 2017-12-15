@@ -14,7 +14,7 @@
 
 <a id="step-1"></a>
 
-## Step 1 Requirements
+## :white_check_mark: Step 1 Requirements
 
 Create a two-page site for your own personal branding. As we continue through the front-end milestones, we will add more features to this site, and it will eventually evolve into your personal portfolio site to share with employers. For now, focus on the structure of your HTML.
 
@@ -24,72 +24,67 @@ Create a two-page site for your own personal branding. As we continue through th
 
 Basically an HTML version of your resume.
 
-1. Each place you've worked must be contained in an `article` element.
-1. Each article should have a header that contains the name of the company and the dates of your employment. 
-1. Each article should contain at least one `section` that describes your position there.
-1. No `footer` required for these articles.
+1. [x] Each place you've worked must be contained in an `article` element.
+1. [x] Each article should have a header that contains the name of the company and the dates of your employment. 
+1. [x] Each article should contain at least one `section` that describes your position there.
+1. [x] No `footer` required for these articles.
 
 #### Contact information page
 
-1. One article.
-1. A heading (e.g. "How to contact me").
-1. Four sections that contain an email address, GitHub link and two social media URLs. (Bonus points if you use images to link to each of these). 
+1. [x] One article.
+1. [x] A heading (e.g. "How to contact me").
+1. [x] Four sections that contain an email address, GitHub link and two social media URLs. (Bonus points if you use images to link to each of these). 
 
 ### Common page elements
 
-#### Navigation
-
-Create a navigation bar on each page that contains a link to both pages. You can use whatever elements you like for the navigation, but it must be contained in the appropriate HTML5 semantic element.
-
-#### Page header
-
-Each page should have an `<h1>` title contained in the appropriate HTML5 semantic tag.
-
-#### Page footer
-
-Each page should have the same footer information. Put whatever information you like in the footer.
+- [x] Navigation
+  - Create a navigation bar on each page that contains a link to both pages. You can use whatever elements you like for the navigation, but it must be contained in the appropriate HTML5 semantic element.
+- [x] Page header
+  - Each page should have an `<h1>` title contained in the appropriate HTML5 semantic tag.
+- [x] Page footer
+  - Each page should have the same footer information. Put whatever information you like in the footer.
 
 ---
 
 <a id="step-2"></a>
 
-## Step 2 Requirements
+## :white_check_mark: Step 2 Requirements
 
-1. Create 2 new HTML pages: Projects and About Me
-1. Add links to these 2 new pages to your existing navigation bar.
+- [x] Create 2 new HTML pages: Projects and About Me
+- [x] Add links to these 2 new pages to your existing navigation bar.
 
 Update your navigation bar with the following interactivity:
 
-1. When the user hovers over one of the links, the color of the text should change.
-1. When the user hovers over one of the links, the background color of the element that contains the link should change.
-1. When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right.
+- [x] When the user hovers over one of the links, the color of the text should change.
+- [x] When the user hovers over one of the links, the background color of the element that contains the link should change.
+- [x] When the user clicks on one of the links, the element that contains the link should grow in size by 5px on the left and right.
 
 ---
 
 <a id="step-3"></a>
 
-## Step 3 Requirents
+## :white_check_mark: Step 3 Requirents
 
-1. Create 1 new HTML page: Blog
-1. Add a link to this blog page in your existing navigation.
-1. Create at least 5 blog entry "cards" for now. Each card should have:
-   * A header section containing an H4 title and the date the blog was written.
-   * A content section containing your body of text. _These entries should be themed around your journey into development. As you discover new tricks, tips and tools, write about your discovery. Write about what you have tried and why it did or did not work. These entries will be helpful for you as you speak with other members of the development community (and will be helpful when you are frustrated - look how far you've come). For now, you can use placeholder text, but this should be your place to continue writing throughout this course._
-1. Your page should follow this mockup. Use Flexbox to achieve this:
-![Blog Mockup](https://github.com/nss-day-cohort-23/personal-site-instructions/raw/master/images/BlogArticleExercise.png)
+1. [x] Create 1 new HTML page: Blog
+1. [x] Add a link to this blog page in your existing navigation.
+1. [x] Create at least 5 blog entry "cards" for now. Each card should have:
+  - [x] A header section containing an H4 title and the date the blog was written.
+  - [x] A content section containing your body of text.
+    - These entries should be themed around your journey into development. As you discover new tricks, tips and tools, write about your discovery. Write about what you have tried and why it did or did not work. These entries will be helpful for you as you speak with other members of the development community (and will be helpful when you are frustrated - look how far you've come). For now, you can use placeholder text, but this should be your place to continue writing throughout this course._
+1. [x] Your page should follow [this mockup](https://github.com/nss-day-cohort-23/personal-site-instructions/raw/master/images/BlogArticleExercise.png). Use Flexbox to achieve this:
 
 ---
 
 <a id="step-4"></a>
 
-## Step 4 Requirements
+## :white_check_mark: Step 4 Requirements
 
-1. Create `main.js` and link to it in `blog.html`
-1. Create an html element with the id `blog-holder`
-1. Make an array called `blogs`
-1. Add each of your existing blogs to the blogs array by making them into objects with the following key, value pairs: title, content, date  (you should have at least 5 blog objects)
-1. Loop over the blogs array and build up the HTML card elements using the values from your blog objects
-1. Add the HTML you created in the last step to the `#blog-holder` element
+1. [x] Create `main.js` and link to it in `blog.html`
+1. [x] Create an html element with the id `blog-holder`
+1. [x] Make an array called `blogs`
+1. [x] Add each of your existing blogs to the blogs array by making them into objects with the following key, value pairs: title, content, date  (you should have at least 5 blog objects)
+1. [x] Loop over the blogs array and build up the HTML card elements using the values from your blog objects
+1. [x] Add the HTML you created in the last step to the `#blog-holder` element
 
 ### Final Result
 * HTML File: 
@@ -104,12 +99,12 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-5"></a>
 
-## Step 5 Requirements
+## :white_check_mark: Step 5 Requirements
 
-1. Create a JSON file that contains all the information for your blog posts (`blog-posts.json`) &mdash; hopefully you've been keeping up with it :wink:. Validate your JSON file.
-1. Create an XHR to load the data from your local json file. 
-1. Loop over the blogs array returned from your XHR and build up the HTML card elements using the values from your blog objects.
-1. Add the HTML you created in the last step to the `#blog-holder` element.
+1. [x] Create a JSON file that contains all the information for your blog posts (`blog-posts.json`) &mdash; hopefully you've been keeping up with it :wink:. Validate your JSON file.
+1. [x] Create an XHR to load the data from your local json file. 
+1. [x] Loop over the blogs array returned from your XHR and build up the HTML card elements using the values from your blog objects.
+1. [x] Add the HTML you created in the last step to the `#blog-holder` element.
 
 ### Final Result
 * HTML File: 
@@ -122,21 +117,26 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-6"></a>
 
-## Step 6 Requirements
+## :white_check_mark: Step 6 Requirements
 
-1. Grid System: Use the grid system to display your blog entries. You should have 3 blog articles per row.
-1. Bootstrap Nav Bar: Should contain 3 elements: 
-    1. Your "Logo" or personal bio site title
-    1. Input bar to search your blog posts (Logic specs for this in a later step). *Note: This should **only be visible** from the Nav Bar on your Blog Page.*
-    1. All of the links to your other pages on your website
-1. Blog Page
-    - The elements on this page should utilize the full width of the screen.
-    - Update each of your blog posts so they all have a set height. Cut off any of the text that expands beyond the set height using some CSS. (Hint: checkout the overflow property).
-    - Whenever the user clicks on a specific blog post card, that blog should appear in a special div (that spans all 12 columns) above all of the blog posts and should show the full content of the blog. When the user clicks on another blog post, it should replace the content of this special div with the content of the new blog post the user selected.
+- [x] Grid System: Use the grid system to display your blog entries. You should have 3 blog articles per row.
+- [x] Bootstrap Nav Bar: Should contain 3 elements: 
+    - [x] Your "Logo" or personal bio site title
+    - [x] Input bar to search your blog posts (Logic specs for this in a later step).
+        - *Note: This should **only be visible** from the Nav Bar on your Blog Page.*
+    - [x] All of the links to your other pages on your website
+- [x] Blog Page
+    - [x] The elements on this page should utilize the full width of the screen.
+    - [x] Update each of your blog posts so they all have a set height. Cut off any of the text that expands beyond the set height using some CSS. (Hint: checkout the overflow property).
+    - [x] Whenever the user clicks on a specific blog post card, that blog should appear in a special div (that spans all 12 columns) above all of the blog posts and should show the full content of the blog. When the user clicks on another blog post, it should replace the content of this special div with the content of the new blog post the user selected.
 
-    **Bonus**: Search
-    - Whenever the user types in the search bar, it should filter the blog posts. EG: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere. 
-    - Add an array of tags to each of your blog post entries. These can be displayed on the card or not, your choice. Make it so the search function only applies to these tags. Example: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
+### **Bonus**: Search
+
+- [x] Whenever the user types in the search bar, it should filter the blog posts.
+    - Example: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere. 
+- [ ] Add an array of tags to each of your blog post entries. These can be displayed on the card or not, your choice.
+    - [ ] Make it so the search function only applies to these tags.
+    - Example: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
 
 
 ### Final Result
