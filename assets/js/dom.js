@@ -10,13 +10,22 @@ function getCard(blog, excerpt) {
             <h4 class="card-title">
                 ${blog.title}
             </h4>
-            <h6 class="card-subtitle mb-2 text-muted">
+            <h6 class="card-subtitle mt-1 mb-2 text-muted">
                 ${blog.date}
             </h6>
             <p class="card-text">
                 ${excerpt ? blog.excerpt : blog.content}
-            </p>
-        </div>
+            </p>`;
+            if (blog.tags.length != 0) {
+                card += `<nav class="tags">
+                    <ul class="pagination">`;
+                        blog.tags.forEach(tag => {
+                            card += `<li class="page-item"><span class="page-link">${tag}</span></li>`;
+                        });
+                    card += `</ul>
+                </nav>`;
+            }
+        card += `</div>
     </article>`;
     return card;
 }

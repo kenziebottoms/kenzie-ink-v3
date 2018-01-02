@@ -134,7 +134,7 @@ Update your navigation bar with the following interactivity:
 
 - [x] Whenever the user types in the search bar, it should filter the blog posts.
     - Example: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere. 
-- [ ] Add an array of tags to each of your blog post entries. These can be displayed on the card or not, your choice.
+- [x] Add an array of tags to each of your blog post entries. These can be displayed on the card or not, your choice.
     - [ ] Make it so the search function only applies to these tags.
     - Example: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
 

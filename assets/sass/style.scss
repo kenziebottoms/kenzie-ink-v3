@@ -26,7 +26,36 @@ a {
 #blog {
     .card {
         cursor: pointer;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: flex-start;
+            > * {
+                flex-grow: 0;
+            }
+            .card-subtitle {
+                font-size: 1.07rem;
+            }
+            .card-text {
+                flex-grow: 1;
+            }
+            .tags {
+                font-size: .9rem;
+                ul {
+                    margin-bottom: 0;
+                    li {
+                        span {
+                            padding: .3rem .5rem;
+                            color: $gray;
+                            cursor: default;
+                        }
+                    }
+                }
+            }
+        }
     }
+    /* non-highlighted blogs only */
     #blog-holder {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -35,6 +64,21 @@ a {
         .card {
             &.failed-search {
                 opacity: .25;
+            }
+        }
+    }
+    #blog-highlight {
+        .tags {
+            font-size: 1rem;
+            ul {
+                margin-bottom: 0;
+                li {
+                    span {
+                        padding: .5rem .75rem;
+                        color: $gray;
+                        cursor: default;
+                    }
+                }
             }
         }
     }

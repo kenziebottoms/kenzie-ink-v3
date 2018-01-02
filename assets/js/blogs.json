@@ -4,37 +4,62 @@
             "id": 1,
             "title": "Personal site progress",
             "date": "November 21, 2017",
-            "content": "I'm enjoying experimenting with Bootstrap here, but I am really ready to move to single-page applications, if, as it's been implied, that means we can refactor our structural HTML (separate out headers and footers)."
+            "content": "I'm enjoying experimenting with Bootstrap here, but I am really ready to move to single-page applications, if, as it's been implied, that means we can refactor our structural HTML (separate out headers and footers).",
+            "tags": [
+                "Bootstrap"
+            ]
         },
         {
             "id": 2,
             "title": "Company site redo",
             "date": "November 21, 2017",
-            "content": "I'm looking forward to redoing this projects, especially if we can do it as a SPA. Not that I'm 100% sure what that means at this point."
+            "content": "I'm looking forward to redoing this projects, especially if we can do it as a SPA. Not that I'm 100% sure what that means at this point.",
+            "tags": [
+                "Javascript"
+            ]
         },
         {
             "id": 3,
             "title": "Git shaming",
             "date": "November 21, 2017",
-            "content": "I was thoroughly and rightly shamed yesterday for reviewing and merging my own pull requests."
+            "content": "I was thoroughly and rightly shamed yesterday for reviewing and merging my own pull requests.",
+            "tags": [
+                "Git"
+            ]
         },
         {
             "id": 4,
             "title": "Group project redo",
             "date": "November 28, 2017",
-            "content": "I would like to brag that, through a combination of communication and divine pity, our group had no merge conflicts to speak of the entire project."
+            "content": "I would like to brag that, through a combination of communication and divine pity, our group had no merge conflicts to speak of the entire project.",
+            "tags": [
+                "Git"
+            ]
         },
         {
             "id": 5,
             "title": "Bronchitis",
             "date": "December 1, 2017",
-            "content": "I missed half of Tuesday, Wednesday, and Thursday because I was busy hacking up both my lungs. I probably should have stayed home today but I... like?? school?? too much??"
+            "content": "I missed half of Tuesday, Wednesday, and Thursday because I was busy hacking up both my lungs. I probably should have stayed home today but I... like?? school?? too much??",
+            "tags": []
         },
         {
             "id": 6,
             "title": "I am helpful, finally",
             "date": "December 1, 2017",
-            "content": "Val has identified me as a go-to resource, at least for favicons. I'm not sure where she got that but I was able to help her."
+            "content": "Val has identified me as a go-to resource, at least for favicons. I'm not sure where she got that but I was able to help her.",
+            "tags": [
+                "HTML"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "jQuery at last",
+            "date": "January 2, 2018",
+            "content": "We've finally broached jQuery and I am a very happy camper. Finally I can use it without feeling like a douchebag show-off.",
+            "tags": [
+                "jQuery", "Javascript"
+            ]
         }
     ]
 }
