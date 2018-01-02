@@ -63,7 +63,7 @@ a {
         grid-row-gap: 1.5rem;
         .card {
             &.failed-search {
-                opacity: .25;
+                display: none;
             }
         }
     }

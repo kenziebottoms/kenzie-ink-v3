@@ -1,5 +1,5 @@
 **/.git
 **/.sass-cache
-css/
-node_modules/
-dist/
+**/css/
+**/node_modules/
+**/dist/

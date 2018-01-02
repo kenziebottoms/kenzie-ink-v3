@@ -13,7 +13,7 @@ function activateSearch(blogs) {
         let re = new RegExp(term, "i");
         $.each(blogs, function(index) {
             let blog = blogs[index];
-            if (blog.title.search(re) == -1 && blog.content.search(term) == -1) {
+            if (blog.tags.join(",").search(re) == -1) {
                 $(".card#post-"+blog.id).addClass("failed-search");
             }
         });

@@ -117,7 +117,7 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-6"></a>
 
-## Step 6 Requirements
+## :white_check_mark: Step 6 Requirements
 
 - [x] Grid System: Use the grid system to display your blog entries. You should have 3 blog articles per row.
 - [x] Bootstrap Nav Bar: Should contain 3 elements: 
@@ -130,17 +130,13 @@ Update your navigation bar with the following interactivity:
     - [x] Update each of your blog posts so they all have a set height. Cut off any of the text that expands beyond the set height using some CSS. (Hint: checkout the overflow property).
     - [x] Whenever the user clicks on a specific blog post card, that blog should appear in a special div (that spans all 12 columns) above all of the blog posts and should show the full content of the blog. When the user clicks on another blog post, it should replace the content of this special div with the content of the new blog post the user selected.
 
-### **Bonus**: Search
+### :white_check_mark: **Bonus**: Search
 
 - [x] Whenever the user types in the search bar, it should filter the blog posts.
     - Example: The user types in "abou", the only remaining blog cards showing should be ones where your content contains the string "abou" somewhere. 
 - [x] Add an array of tags to each of your blog post entries. These can be displayed on the card or not, your choice.
-    - [ ] Make it so the search function only applies to these tags.
-    - Example: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
-
-
-### Final Result
-![Blog Jumbo](https://github.com/nss-day-cohort-23/personal-site-instructions/raw/master/images/Blog_Jumbo.gif)
+    - [x] Make it so the search function only applies to these tags.
+        - Example: The user types in "func", the only remaining blog cards showing should be ones where your tags array contains the string "func" at some index in the array.
 
 ---
 
@@ -148,7 +144,10 @@ Update your navigation bar with the following interactivity:
 
 ## Step 7 Requirements
 
-1. [ ] ES6-ify your entire personal site. No more `var`. Fat Arrow (`=>`) functions anywhere you can use them. String template literals (`${}`).
+1. [ ] ES6-ify your entire personal site.
+    - [ ] No more `var`.
+    - [ ] Fat Arrow (`=>`) functions anywhere you can use them.
+    - [ ] String template literals (`${}`).
 
 ---
 
