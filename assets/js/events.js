@@ -1,12 +1,12 @@
 "use strict";
 
-function activateEvents(blogs) {
+const activateEvents = blogs => {
     activateSearch(blogs);
     activateBlogCards(blogs);
-}
+};
 
 // add keyup listener to search field
-function activateSearch(blogs) {
+const activateSearch = blogs => {
     $('#search-blogs').keyup(function() {
         $('#blog-holder .card').removeClass("failed-search");
         let term = $(this).val();
@@ -18,10 +18,10 @@ function activateSearch(blogs) {
             }
         });
     });
-}
+};
 
 // add click listeners to each blog
-function activateBlogCards(blogs) {
+const activateBlogCards = blogs => {
     const domController = require("./dom");
     $('#blog-holder .card').click(function() {
         let targetPostId = parseInt($(this).attr('id').substr(5));
@@ -29,6 +29,6 @@ function activateBlogCards(blogs) {
         $('#blog-highlight').empty();
         $('#blog-highlight').append(domController.getCard(newBlog, false));
     });
-}
+};
 
 module.exports = {activateEvents};

@@ -5,8 +5,8 @@
 1. :white_check_mark: [Step 3](#step-3)
 1. :white_check_mark: [Step 4](#step-4)
 1. :white_check_mark: [Step 5](#step-5)
-1. [Step 6](#step-6)
-1. [Step 7](#step-7)
+1. :white_check_mark: [Step 6](#step-6)
+1. :white_check_mark: [Step 7](#step-7)
 1. [Step 8](#step-8)
 1. [Step 9](#step-9)
 
@@ -142,12 +142,12 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-7"></a>
 
-## Step 7 Requirements
+## :white_check_mark: Step 7 Requirements
 
-1. [ ] ES6-ify your entire personal site.
-    - [ ] No more `var`.
-    - [ ] Fat Arrow (`=>`) functions anywhere you can use them.
-    - [ ] String template literals (`${}`).
+1. [x] ES6-ify your entire personal site.
+    - [x] No more `var`.
+    - [x] Fat Arrow (`=>`) functions anywhere you can use them.
+    - [x] String template literals (`${}`).
 
 ---
 

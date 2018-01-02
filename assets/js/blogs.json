@@ -41,7 +41,9 @@
             "title": "Bronchitis",
             "date": "December 1, 2017",
             "content": "I missed half of Tuesday, Wednesday, and Thursday because I was busy hacking up both my lungs. I probably should have stayed home today but I... like?? school?? too much??",
-            "tags": []
+            "tags": [
+                "other"
+            ]
         },
         {
             "id": 6,
