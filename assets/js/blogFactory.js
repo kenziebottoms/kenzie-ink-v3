@@ -2,19 +2,20 @@
 
 // fetch and return blogs from filePath, or false
 const fetchBlogs = filePath => {
-    const domController = require("./dom");
-    const events = require("./events");
-    let blogRequest = new XMLHttpRequest();
-    blogRequest.onreadystatechange = () => {
-        if (blogRequest.readyState == 4 && blogRequest.status == 200) {
-            let response = JSON.parse(blogRequest.responseText);
-            let blogs = response.blogs;
-            domController.populatePage(blogs);
-            events.activateEvents(blogs);
-        }
-    };
-    blogRequest.open("GET", filePath, true);
-    blogRequest.send();
+    return new Promise((resolve, reject) => {
+        $.ajax({url: filePath})
+        .done(result => resolve(result))
+        .fail(error => reject(error));
+    });
 };
 
-module.exports = {fetchBlogs};
+const refreshPage = filePath => {
+    const domController = require("./dom");
+    const events = require("./events");
+    fetchBlogs(filePath).then(response => {
+        domController.populatePage(response.blogs);
+        events.activateEvents(response.blogs);
+    });
+};
+
+module.exports = {refreshPage};

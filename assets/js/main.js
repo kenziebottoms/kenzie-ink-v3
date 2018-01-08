@@ -2,4 +2,4 @@
 
 const factory = require("./blogFactory");
 
-factory.fetchBlogs("assets/js/blogs.json");
+factory.refreshPage("assets/js/blogs.json");
