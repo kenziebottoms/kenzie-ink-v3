@@ -1,0 +1,28 @@
+<article class="card" id="post-{{blog.id}}">
+    <div class="card-body">
+        <h4 class="card-title">
+            {{blog.title}}
+        </h4>
+        <h6 class="card-subtitle mt-1 mb-2 text-muted">
+            {{blog.date}}
+        </h6>
+        <p class="card-text">
+            {{#if excerpt}}
+                {{blog.excerpt}}
+            {{else}}
+                {{blog.content}}
+            {{/if}}
+        </p>
+        {{#if blog.tags.length}}
+            <nav class="tags">
+                <ul class="pagination">
+                    {{#each blog.tags}}
+                        <li class="page-item">
+                            <span class="page-link">{{this}}</span>
+                        </li>
+                    {{/each}}
+                </ul>
+            </nav>
+        {{/if}}
+    </div>
+</article>

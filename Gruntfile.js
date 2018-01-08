@@ -1,12 +1,18 @@
 module.exports = function(grunt) {
     grunt.initConfig({
         browserify: {
-            "dist/bundle.js" : ["assets/js/main.js"],
+            files: {
+                src: "assets/js/main.js",
+                dest: "dist/bundle.js",
+            },
+            options: {
+                transform: ["hbsfy"],
+            }
         },
         jshint: {
             files: ["assets/js/**/*.js"],
             options: {
-                predef: ["document", "console", "$"],
+                predef: ["document", "console", "$", "alert"],
                 esnext: true,
                 globalstrict: true,
                 globals: {},
@@ -29,6 +35,10 @@ module.exports = function(grunt) {
                 files: ["assets/sass/**/*.scss"],
                 tasks: ["sass"],
             },
+            hbs: {
+                files: ["assets/templates/**/*.hbs"],
+                tasks: ["browserify"]
+            }
         },
     });
 
