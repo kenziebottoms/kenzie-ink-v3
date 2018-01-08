@@ -7,8 +7,8 @@
 1. :white_check_mark: [Step 5](#step-5)
 1. :white_check_mark: [Step 6](#step-6)
 1. :white_check_mark: [Step 7](#step-7)
-1. [Step 8](#step-8)
-1. [Step 9](#step-9)
+1. :white_check_mark: [Step 8](#step-8)
+1. :white_check_mark: [Step 9](#step-9)
 
 ---
 
@@ -153,30 +153,30 @@ Update your navigation bar with the following interactivity:
 
 <a id="step-8"></a>
 
-## Step 8 Requirements
+## :white_check_mark: Step 8 Requirements
 
-- [ ] Add jQuery to your project for any DOM manipulation.  
-- [ ] None of the following should exist any longer in your project:
-    * [ ] `document.getElementById`
-    * [ ] `XHRHttpRequest`
-    * [ ] `addEventListener`
-    * [ ] `parentNode`
-    * [ ] `childNode`
-    * [ ] `siblingNode`
-    * [ ] any other DOM traversal with the word node
-- [ ] You should make use of jQuery things like:
-    * [ ] `$.get`
-    * [ ] `.click`
-    * [ ] `.children`
-    * [ ] `.parent`
-    * [ ] `.sibling`
-    * [ ] any other methods that strike your fancy
+- [x] Add jQuery to your project for any DOM manipulation.  
+- [x] None of the following should exist any longer in your project:
+    * [x] `document.getElementById`
+    * [x] `XHRHttpRequest`
+    * [x] `addEventListener`
+    * [x] `parentNode`
+    * [x] `childNode`
+    * [x] `siblingNode`
+    * [x] any other DOM traversal with the word node
+- [x] You should make use of jQuery things like:
+    * [x] `$.get`
+    * [x] `.click`
+    * [x] `.children`
+    * [x] `.parent`
+    * [x] `.sibling`
+    * [x] any other methods that strike your fancy
 
 ---
 
 <a id="step-9"></a>
 
-## Step 9 Requirements
+## :white_check_mark: Step 9 Requirements
 
 1. [x] Add SASS to your project for all styling. You will need to change your Gruntfile and add an NPM package.
 2. [x] None of the following should exist in your project:
