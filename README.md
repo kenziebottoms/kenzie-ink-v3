@@ -1,5 +1,13 @@
 # Personal Bio Site
 
+![](https://img.shields.io/badge/data-static-lightgrey.svg)
+![](https://img.shields.io/badge/template-none-lightgrey.svg)
+![](https://img.shields.io/badge/js-jquery-blue.svg)
+![](https://img.shields.io/badge/modularity-browserify-yellow.svg)
+![](https://img.shields.io/badge/css_preprocessor-scss-ff69b4.svg)
+![](https://img.shields.io/badge/css_framework-bootstrap-5F2C7C.svg)
+![](https://img.shields.io/badge/mvp-working-brightgreen.svg)
+
 1. :white_check_mark: [Step 1](#step-1)
 1. :white_check_mark: [Step 2](#step-2)
 1. :white_check_mark: [Step 3](#step-3)
